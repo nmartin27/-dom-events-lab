@@ -40,7 +40,7 @@ calculator.addEventListener('click', (event) => {
 //   }
   // looked up the function if currentInput is number or false
   if (!isNaN(value) || value === '+' || value === '-' || value === '*' || value === '/') {
-    currentInput += event.target.innerText
+    currentInput += event.target.innerText  //had to look up meaning of +=, was not understanding
     display.innerText = currentInput;
   }
   if (value === '=') {
@@ -54,4 +54,8 @@ calculator.addEventListener('click', (event) => {
 });
 
 
+//not correct method
+// display.forEach((button) => {
+//     display.addEventListener('click', (event) => {
+//     });
 /*-------------------------------- Functions --------------------------------*/
